@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Judiska Högtider – SO åk 7–8</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="StyleSheet.css" />
 </head>
 <body>
 
 <header>
     <h1>Judiska Högtider</h1>
-    <p>En översikt för årskurs 7–8 | Fakta, historier och quiz</p>
+    <p>Fakta, berättelser och quiz för årskurs 7–8</p>
 </header>
 
-<nav class="top-nav">
-    <a href="#">Hem</a>
-    <a href="#veckan">En gång i veckan</a>
-    <a href="#livet">En gång i livet</a>
-    <a href="#året">En gång per år</a>
-    <a href="#quiz-section">Quiz</a>
-</nav>
+<!-- HISTORIE-SLIDER -->
+<section id="story-slider">
+    <button class="arrow left" id="prevStory">&#10094;</button>
+
+    <div class="story-box" id="storyBox">
+        <h2 id="storyTitle"></h2>
+        <p id="storyText"></p>
+    </div>
+
+    <button class="arrow right" id="nextStory">&#10095;</button>
+</section>
+
 
 <main>
     <section class="content">
@@ -29,125 +34,63 @@
         <article>
             <h3>Sabbaten</h3>
             <p>
-                Sabbaten är judarnas vilodag, från fredag kväll till lördag kväll.
-                Enligt traditionen skapade Gud världen på sex dagar och vilade på den sjunde,
-                och därför ska människan också ta en paus från arbete.
-                Under sabbaten tänds ljus, familjer samlas och många undviker aktiviteter
-                som räknas som arbete – exempelvis att laga mat eller skriva.
-            </p>
-            <p>
-                En välkänd berättelse i Tora handlar om hur israeliterna i öknen samlade manna,
-                men på sabbaten fanns inget manna att hämta. Det lärde folket
-                att denna dag skulle vara helgad och annorlunda än resten av veckan.
+                Sabbaten är judarnas vilodag. Den börjar när solen går ner på fredagen
+                och avslutas när solen gått ner på lördagen. Man tänder ljus, äter en helig måltid
+                och undviker arbete. Enligt Tora vilade Gud på den sjunde dagen.
             </p>
         </article>
-
 
         <h2 id="livet">En gång i livet</h2>
 
         <article>
             <h3>Omskärelse – Brit Milah</h3>
             <p>
-                Åtta dagar efter att en pojke föds genomförs Brit Milah, den judiska omskärelsen.
-                Det beskrivs i Tora hur Abraham ingick ett förbund med Gud, och denna handling
-                blev ett tecken på tillhörighet till det judiska folket.
+                Åtta dagar efter att en pojke föds utförs Brit Milah. Detta går tillbaka till
+                Abrahams förbund med Gud, ett tecken på identitet och tillhörighet.
             </p>
         </article>
 
         <article>
             <h3>Bar och Bat Mitzvah</h3>
             <p>
-                När pojkar fyller 13 år och flickor 12 anses de religiöst myndiga.
-                Pojkar firar Bar Mitzvah och flickor Bat Mitzvah.
-                Ordet "Mitzvah" betyder bud, alltså att man nu själv ansvarar
-                för att följa de religiösa reglerna.
-            </p>
-            <p>
-                En klassisk berättelse beskriver hur en ung pojke kämpade med att läsa ur Tora
-                inför sin Bar Mitzvah. När dagen kom läste han med darrig röst
-                – men församlingen ställde sig upp och visade att mod är viktigare
-                än perfektion. Det är en symbol för att ta sitt första steg som vuxen i tron.
+                Vid 13 år (pojkar) och 12 år (flickor) blir man religiöst myndig.
+                Nu tar man ansvar för att följa de judiska buden.
             </p>
         </article>
 
         <article>
             <h3>Judiskt Bröllop</h3>
             <p>
-                Ett judiskt bröllop sker under en chuppa, ett tältliknande tak som symboliserar
-                hemmet paret ska bygga tillsammans. Brudparet fastar ofta innan ceremonin.
-                Mot slutet krossas ett glas till minne av det förstörda templet i Jerusalem,
-                en symbol för att glädje och sorg alltid finns tillsammans i livet.
+                Ceremonin sker under en chuppa. Man fastar innan och krossar glas
+                för att minnas templets förstörelse i Jerusalem.
             </p>
         </article>
-
 
         <h2 id="året">En gång per år</h2>
 
-        <article>
-            <h3>Rosh Hashana – Nyår</h3>
-            <p>
-                Rosh Hashana markerar årets början. Man blåser i shofar, ett vädurshorn,
-                vilket symboliserar både varning och möjlighet till nystart.
-                Enligt traditionen öppnas "livets bok" där människors handlingar vägs.
-            </p>
+        <article><h3>Rosh Hashana – Nyår</h3>
+            <p>En tid för eftertanke och början på de tio botdagarna.</p>
         </article>
 
-        <article>
-            <h3>Yom Kippur – Försoningsdagen</h3>
-            <p>
-                Detta är årets heligaste dag. Judar fastar i 25 timmar,
-                ber om förlåtelse och försöker göra upp med människor de sårat.
-                Det anses att Gud på denna dag avgör vem som skrivit sig för ännu ett år i livets bok.
-            </p>
+        <article><h3>Yom Kippur – Försoningsdagen</h3>
+            <p>Årets heligaste dag. Man fastar, ber och försonas.</p>
         </article>
 
-        <article>
-            <h3>Chanukka – Ljusets Högtid</h3>
-            <p>
-                Chanukka firar minnet av ett mirakel. När templet återinvigdes fanns bara olja
-                för en dag, men lampan brann i åtta dagar. Därför tänder man åtta ljus,
-                ett för varje kväll. Berättelsen visar att hopp kan lysa även i mörka tider.
-            </p>
+        <article><h3>Chanukka – Ljusets högtid</h3>
+            <p>Man minns oljemiraklet som gav åtta dagars ljus.</p>
         </article>
 
-        <article>
-            <h3>Sukkot – Lövhyddohögtiden</h3>
-            <p>
-                Under sju dagar bygger familjer små hyddor utomhus och äter där.
-                Hyddorna påminner om hur israeliterna levde under ökenvandringen.
-            </p>
+        <article><h3>Sukkot – Lövhyddohögtiden</h3>
+            <p>Man bygger hyddor som minne av ökenvandringen.</p>
         </article>
 
-        <article>
-            <h3>Pesach – Den judiska påsken</h3>
-            <p>
-                Pesach berättar historien om uttåget ur Egypten, där Mose ledde folket
-                bort från slaveriet. Under måltiden, Seder, berättar man historien steg för steg
-                och äter symbolisk mat som bröd utan jäst – matzá – som israeliterna åt
-                när de måste lämna landet snabbt.
-            </p>
-        </article>
-
-        <article>
-            <h3>Purim – Glädjens Högtid</h3>
-            <p>
-                Purim minns drottning Esters mod när hon stoppade ett folkmord i Persien.
-                Man klär ut sig, läser Esters bok och delar ut gåvor till de fattiga.
-            </p>
-        </article>
-
-        <article>
-            <h3>Shavuot – Veckohögtiden</h3>
-            <p>
-                Shavuot firar minnet av när Mose tog emot Tio Budorden på Sinai berg.
-                Den kopplas också till skörd och förstlingsfrukter.
-            </p>
+        <article><h3>Pesach</h3>
+            <p>Man minns uttåget ur Egypten och frihetens början.</p>
         </article>
 
     </section>
 
-
-    <!-- Quiz Section -->
+    <!-- QUIZ -->
     <section id="quiz-section">
         <h2>Quiz – Testa dina kunskaper!</h2>
         <div id="quiz"></div>
