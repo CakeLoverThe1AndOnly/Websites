@@ -1,122 +1,172 @@
-body {
+/* Global Styles */
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #f2f2f2;
+    background: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background: #fbfbfb;
-    border-bottom: 2px solid #dcdcdc;
+    padding: 60px 20px;
+    background: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
     font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
 }
 
-/* Slider Section */
+/* Story Slider */
 #story-slider {
     position: relative;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 50px auto;
     display: flex;
     align-items: center;
+    gap: 20px;
+    overflow: hidden;
 }
+
 .story-box {
     flex: 1;
     background: #ffffff;
-    padding: 30px;
-    border-left: 8px solid #444;
-    border-radius: 6px;
-    min-height: 200px;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    padding: 30px 25px;
+    border-left: 6px solid #4a90e2;
+    border-radius: 8px;
+    min-height: 220px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-}
-.story-box:hover {
-    transform: scale(1.01);
-}
-.story-box h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    font-family: "Segoe UI", sans-serif;
-    opacity: 0;
-    animation: fadeIn 0.6s forwards;
-}
-.story-box p {
-    font-size: 18px;
-    line-height: 1.5;
-    opacity: 0;
-    animation: fadeIn 0.6s 0.2s forwards;
-}
-@keyframes fadeIn {
-    from{ opacity: 0; }
-    to { opacity: 1; }
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Arrows */
+.story-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.story-box h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.story-box p {
+    font-size: 17px;
+    opacity: 0;
+    animation: fadeIn 0.5s 0.2s forwards;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navigation Arrows */
 .arrow {
     background: none;
     border: none;
-    font-size: 40px;
+    font-size: 42px;
     cursor: pointer;
-    color: #333;
-    padding: 0 20px;
+    color: #4a4a4a;
+    transition: color 0.2s;
 }
-.arrow:hover { color: #777; }
+
+.arrow:hover {
+    color: #4a90e2;
+}
 
 /* Content Boxes */
 .content article {
-    background: #fff;
-    padding: 25px;
+    background: #ffffff;
+    padding: 30px 25px;
     margin: 25px auto;
-    border-left: 5px solid #555;
-    border-radius: 4px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    border-left: 6px solid #4a90e2;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     max-width: 900px;
+    transition: transform 0.3s;
 }
+
+.content article:hover {
+    transform: translateY(-3px);
+}
+
 .content h2 {
     max-width: 900px;
     margin: 40px auto 20px;
     padding: 0 20px;
+    font-size: 28px;
+    color: #333;
 }
 
-/* Quiz */
+/* Quiz Section */
 #quiz-section {
-    background: #fff;
-    padding: 25px;
-    border-left: 5px solid #295f2d;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-left: 6px solid #295f2d;
     margin: 50px auto;
-    border-radius: 4px;
+    border-radius: 8px;
     max-width: 900px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
-#quiz div { margin-bottom: 15px; }
+
+#quiz div { margin-bottom: 18px; }
+
 #quiz input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
+
+#quiz input:focus {
+    border-color: #295f2d;
+    box-shadow: 0 0 5px rgba(41, 95, 45, 0.4);
+}
+
 button {
-    padding: 10px 25px;
+    padding: 12px 30px;
     font-size: 18px;
     background: #295f2d;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
 }
-button:hover { background: #1f4b23; }
-#result { margin-top: 20px; font-weight: bold; font-size: 20px; }
 
+button:hover {
+    background: #1f4b23;
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #295f2d;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #fbfbfb;
-    border-top: 2px solid #dcdcdc;
-    margin-top: 40px;
+    padding: 25px 20px;
+    background: #ffffff;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 50px;
+    font-size: 16px;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.05);
 }
