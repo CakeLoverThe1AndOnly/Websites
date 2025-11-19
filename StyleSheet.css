@@ -52,6 +52,7 @@ header {
     animation: fadeIn 0.6s 0.2s forwards;
 }
 @keyframes fadeIn {
+    from{ opacity: 0; }
     to { opacity: 1; }
 }
 
