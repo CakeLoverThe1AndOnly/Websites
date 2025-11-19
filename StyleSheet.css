@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Helvetica', sans-serif;
-    background-color: #f4f4f4; /* Light background to contrast with panels */
-    color: #333; /* Dark text color for contrast */
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ header {
     color: #fff;
     padding: 40px 20px;
     text-align: center;
-    border-bottom: 3px solid #eaeaea; /* Thin border to separate header from body */
+    border-bottom: 3px solid #eaeaea;
 }
 
 header h1 {
@@ -48,8 +48,8 @@ section {
 /* Styling for each "Tile" or Panel */
 .hoytid {
     background-color: #fff;
-    border: 2px solid #ddd; /* Thin border to define each box */
-    border-radius: 10px; /* Rounded corners for a softer feel */
+    border: 2px solid #ddd;
+    border-radius: 10px;
     width: calc(33.333% - 20px); /* Three tiles in a row */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ section {
 }
 
 .hoytid:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -104,15 +104,6 @@ footer p {
     color: #bbb;
 }
 
-footer a {
-    color: #ff9900; /* Warm accent color */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .hoytid {
@@ -133,4 +124,16 @@ footer a:hover {
     .hoytid {
         width: 100%; /* Single column layout on very small screens */
     }
+}
+
+/* Add CSS for the visibility animation */
+.hoytid {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hoytid.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
