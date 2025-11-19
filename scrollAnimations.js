@@ -1,6 +1,6 @@
-// Funktion för att kolla när ett element är synligt i vyn
+// Function to check visibility of elements on scroll
 function checkVisibility() {
-    const elements = document.querySelectorAll('.hoytid h3, .hoytid td');
+    const elements = document.querySelectorAll('.hoytid');
 
     elements.forEach((el) => {
         const rect = el.getBoundingClientRect();
@@ -12,8 +12,8 @@ function checkVisibility() {
     });
 }
 
-// Lyssna på scroll-händelser
+// Event listener for scroll events
 window.addEventListener('scroll', checkVisibility);
 
-// Kör checkVisibility vid sidladdning
+// Initial call to set visibility when the page loads
 document.addEventListener('DOMContentLoaded', checkVisibility);
