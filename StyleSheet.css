@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Georgia", serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: #f2f2f2;
     color: #333;
 }
@@ -23,7 +23,6 @@ header {
     display: flex;
     align-items: center;
 }
-
 .story-box {
     flex: 1;
     background: #ffffff;
@@ -33,25 +32,27 @@ header {
     min-height: 200px;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-
-    /* Subtle paper texture */
     background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 }
-
 .story-box:hover {
     transform: scale(1.01);
 }
-
 .story-box h2 {
     font-size: 30px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-    font-family: "Times New Roman", serif;
+    font-family: "Segoe UI", sans-serif;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards;
 }
-
 .story-box p {
     font-size: 18px;
     line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 0.6s 0.2s forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
 /* Arrows */
@@ -63,19 +64,22 @@ header {
     color: #333;
     padding: 0 20px;
 }
-
-.arrow:hover {
-    color: #777;
-}
+.arrow:hover { color: #777; }
 
 /* Content Boxes */
 .content article {
     background: #fff;
     padding: 25px;
-    margin: 25px 0;
+    margin: 25px auto;
     border-left: 5px solid #555;
     border-radius: 4px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    max-width: 900px;
+}
+.content h2 {
+    max-width: 900px;
+    margin: 40px auto 20px;
+    padding: 0 20px;
 }
 
 /* Quiz */
@@ -83,14 +87,19 @@ header {
     background: #fff;
     padding: 25px;
     border-left: 5px solid #295f2d;
-    margin-top: 50px;
+    margin: 50px auto;
     border-radius: 4px;
+    max-width: 900px;
 }
-
-#quiz div {
-    margin-bottom: 15px;
+#quiz div { margin-bottom: 15px; }
+#quiz input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
-
 button {
     padding: 10px 25px;
     font-size: 18px;
@@ -100,13 +109,13 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+button:hover { background: #1f4b23; }
+#result { margin-top: 20px; font-weight: bold; font-size: 20px; }
 
-button:hover {
-    background: #1f4b23;
-}
-
-#result {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 20px;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fbfbfb;
+    border-top: 2px solid #dcdcdc;
+    margin-top: 40px;
 }
