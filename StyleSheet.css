@@ -1,105 +1,73 @@
 body {
-  margin: 0;
-  background: #f4f4f4;
-  font-family: "Georgia", serif;
-  color: #222;
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f5f5f5;
+    color: #333;
 }
 
-/* Meny */
-.topnav {
-  background: #233d4d;
-  color: white;
-  padding: 12px 0;
+header {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
 }
 
-.nav-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #e7e7e7;
+    padding: 15px;
 }
 
-.logo {
-  font-size: 22px;
-  font-weight: bold;
+.top-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #004a88;
 }
 
-.links a {
-  margin-left: 20px;
-  color: #f0f0f0;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
 }
 
-.links a:hover {
-  text-decoration: underline;
+.content article {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #4669aa;
+    border-radius: 4px;
 }
 
-/* Header */
-.hero {
-  background: #ffffff;
-  padding: 50px 20px;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
+#quiz-section {
+    background: white;
+    padding: 20px;
+    border-left: 5px solid #2a8a31;
+    margin-top: 40px;
+    border-radius: 4px;
 }
 
-.hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+#quiz div {
+    margin-bottom: 15px;
 }
 
-/* Artikel-stil som SO-rummet */
-.content {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
-
-.article {
-  background: white;
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.article h2 {
-  margin-top: 0;
-  font-size: 30px;
-}
-
-.story {
-  background: #fff5d9;
-  border-left: 4px solid #f0b429;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 4px;
-  font-style: italic;
-}
-
-/* Quiz */
 button {
-  background: #233d4d;
-  color: white;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #2a8a31;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
 button:hover {
-  background: #1b2f3a;
+    background: #256f29;
 }
 
 #result {
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  color: #555;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
