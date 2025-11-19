@@ -1,81 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judiska Högtider</title>
-    <link rel="stylesheet" href="StyleSheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Judiska högtider — SO för åk 7–8</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Judiska Högtider</h1>
-        <p>En omfattande guide över judiska högtider och traditioner. Här kan du läsa om de viktigaste högtiderna och deras betydelse.</p>
-    </header>
+  <header class="hero">
+    <h1>Judiska högtider</h1>
+    <p class="lead">En enkel och faktaspäckad sida för SO-prov i årskurs 7–8. Läs, lär och testa dig själv längst ner!</p>
+  </header>
 
-    <section>
-        <!-- Sabbat Section -->
-        <div class="hoytid">
-            <h3>Sabbat</h3>
-            <table>
-                <tr>
-                    <th>Beskrivning</th>
-                    <td>Sabbat är en vilodag för judar, som infaller varje vecka från fredag kväll till lördag kväll.</td>
-                </tr>
-                <tr>
-                    <th>Syfte</th>
-                    <td>En tid för vila och andakt, för att påminna om Guds skapelse av världen på sex dagar och vilan på den sjunde.</td>
-                </tr>
-                <tr>
-                    <th>Specifika Traditioner</th>
-                    <td>Förbjudet att arbeta eller utföra vardagliga sysslor. Måltider, böner och tända sabbatsljus är vanliga traditioner.</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Omskärelse Section -->
-        <div class="hoytid">
-            <h3>Omskärelse</h3>
-            <table>
-                <tr>
-                    <th>Ålder</th>
-                    <td>Vid åtta dagars ålder för pojkar.</td>
-                </tr>
-                <tr>
-                    <th>Symbolik</th>
-                    <td>Omskärelsen är ett tecken på att barnet är en del av det judiska folket och Guds förbund med Abraham.</td>
-                </tr>
-                <tr>
-                    <th>Ritual</th>
-                    <td>Ritualen utförs av en specialiserad person, kallad "mohel".</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Bar/Bat Mitzvah Section -->
-        <div class="hoytid">
-            <h3>Bar/Bat Mitzvah</h3>
-            <table>
-                <tr>
-                    <th>Ålder</th>
-                    <td>Bar Mitzvah sker vid 13 års ålder för pojkar och Bat Mitzvah vid 12 års ålder för tjejer.</td>
-                </tr>
-                <tr>
-                    <th>Betydelse</th>
-                    <td>Vid Bar/Bat Mitzvah blir man religiöst myndig och får ta ansvar för sina egna handlingar enligt den judiska lagen.</td>
-                </tr>
-                <tr>
-                    <th>Traditioner</th>
-                    <td>Under ceremonin läser den unga personen från Toran och ofta hålls en fest med familj och vänner.</td>
-                </tr>
-            </table>
-        </div>
+  <main class="container">
+    <section id="weekly">
+      <h2>En gång i veckan — Sabbat</h2>
+      <p>Sabbaten är judendomens vilodag. Den börjar vid solnedgången på fredag och slutar vid solnedgången på lördag.</p>
+      <ul>
+        <li>Gud skapade världen på sex dagar och vilade på den sjunde.</li>
+        <li>Man avstår från <em>melacha</em> (arbete).</li>
+        <li>Familjer samlas, tänder ljus och äter en sabbatsmåltid.</li>
+      </ul>
+      <p class="story"><strong>Berättelse:</strong> Varje fredag tändes två ljus i hemmet. Barnen såg hur lugnet spred sig och visste att sabbaten börjat.</p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Judiska Högtider. Alla rättigheter förbehållna.</p>
-    </footer>
+    <section id="once-in-life">
+      <h2>En gång i livet</h2>
 
-    <script src="scrollAnimations.js"></script>
+      <article>
+        <h3>Omskärelse (Brit Milah)</h3>
+        <p>Genomförs vid åtta dagars ålder och symboliserar förbundet mellan Gud och det judiska folket.</p>
+        <p class="story"><strong>Berättelse:</strong> Vid ceremonin fick barnet sitt namn och familjen samlades med sång och välsignelser.</p>
+      </article>
+
+      <article>
+        <h3>Bar / Bat Mitzvah</h3>
+        <p>När unga blir religiöst myndiga: 13 år för pojkar och 12 år för flickor.</p>
+        <p class="story"><strong>Berättelse:</strong> David läste ur Toran för första gången och kände hur hela församlingen höll andan av stolthet.</p>
+      </article>
+    </section>
+
+    <section id="wedding">
+      <h2>Judiskt bröllop</h2>
+      <ul>
+        <li>Man står under ett tältliknande tak, en <em>chuppah</em>.</li>
+        <li>I slutet krossas ett glas som minne av templets förstörelse.</li>
+      </ul>
+      <p class="story"><strong>Berättelse:</strong> När glaset krossades ropade gästerna “Mazel tov!” och festen började på riktigt.</p>
+    </section>
+
+    <section id="annual">
+      <h2>En gång per år — Högtider</h2>
+
+      <article>
+        <h3>Rosh Hashana</h3>
+        <p>Judiskt nyår som inleder tio dagar av eftertanke.</p>
+      </article>
+
+      <article>
+        <h3>Yom Kippur</h3>
+        <p>Försoningsdagen – fasta, bön och förlåtelse.</p>
+      </article>
+
+      <article>
+        <h3>Chanukka</h3>
+        <p>Ljusfesten som firar miraklet då oljan räckte i åtta dagar.</p>
+      </article>
+
+      <article>
+        <h3>Sukkot</h3>
+        <p>Man bygger lövhyddor för att minnas ökenvandringen.</p>
+      </article>
+
+      <article>
+        <h3>Pesach</h3>
+        <p>Firar uttåget ur Egypten och friheten från slaveriet.</p>
+      </article>
+    </section>
+
+    <section id="quiz">
+      <h2>Quiz — Testa dig själv</h2>
+      <form id="quizForm">
+        <ol>
+          <li>
+            När börjar sabbaten?<br>
+            <label><input type="radio" name="q1" value="a"> Lördag morgon</label><br>
+            <label><input type="radio" name="q1" value="b"> Fredag kväll</label><br>
+            <label><input type="radio" name="q1" value="c"> Söndag kväll</label>
+          </li>
+
+          <li>
+            Vid vilken ålder har pojkar Bar Mitzvah?<br>
+            <label><input type="radio" name="q2" value="a"> 12 år</label><br>
+            <label><input type="radio" name="q2" value="b"> 13 år</label><br>
+            <label><input type="radio" name="q2" value="c"> 14 år</label>
+          </li>
+
+          <li>
+            Vilken högtid firar uttåget ur Egypten?<br>
+            <label><input type="radio" name="q3" value="a"> Chanukka</label><br>
+            <label><input type="radio" name="q3" value="b"> Pesach</label><br>
+            <label><input type="radio" name="q3" value="c"> Sukkot</label>
+          </li>
+
+          <li>
+            Varför krossas ett glas vid bröllopet?<br>
+            <label><input type="radio" name="q4" value="a"> För att fira vinets glädje</label><br>
+            <label><input type="radio" name="q4" value="b"> För att minnas templets förstörelse</label><br>
+            <label><input type="radio" name="q4" value="c"> För att symbolisera brudens skönhet</label>
+          </li>
+        </ol>
+
+        <button type="button" id="checkBtn">Kontrollera svar</button>
+      </form>
+
+      <div id="result"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    Skapat för repetition inför SO-prov åk 7–8.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
