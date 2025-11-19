@@ -3,12 +3,27 @@
 ---------------------- */
 const stories = [
     { title: "Mose och den brinnande busken", text: "Enligt Tora mötte Mose Gud vid en buske som brann utan att förtäras. Där fick han uppdraget att leda israeliterna ut ur Egypten." },
-    { title: "Miraklet under Chanukka", text: "När templet återinvigdes fanns bara olja för en dag, men ljuset brann i åtta. Därför firas Chanukka i åtta kvällar." },
+    { title: "Röda Havets delning", text: "När israeliterna flydde från Egypten delade Gud havet så att folket kunde gå igenom på torr mark." },
     { title: "Abrahams förbund", text: "Abraham slöt ett evigt förbund med Gud. Brit Milah, omskärelse på åttonde dagen, är ett tecken på detta förbund." },
-    { title: "Röda Havets delning", text: "När israeliterna flydde från Egypten, enligt Tora, delade Gud havet så att folket kunde gå igenom på torr mark." },
-    { title: "Ester räddar sitt folk", text: "Drottning Ester avslöjade en plan att utrota judarna i Persien. Hennes mod räddade folket, vilket firas under Purim." }
-    // … fler stories
+    { title: "Sabbat", text: "Sabbaten är en vilodag som firas varje vecka från fredag kväll till lördag kväll för att minnas Guds skapelse." },
+    { title: "Purim", text: "Drottning Ester avslöjade en plan att utrota judarna i Persien. Hennes mod räddade folket, vilket firas under Purim." },
+    { title: "Chanukka", text: "När templet återinvigdes fanns bara olja för en dag, men ljuset brann i åtta. Därför firas Chanukka i åtta kvällar." },
+    { title: "Pesach", text: "Pesach, eller påsk, firar israeliternas uttåg ur Egypten och befrielsen från slaveriet." },
+    { title: "Yom Kippur", text: "Försoningsdagen är den heligaste dagen i judendomen, då man fastar och ber om förlåtelse för sina synder." },
+    { title: "Bar/Bat Mitzvah", text: "När en pojke fyller 13 eller en flicka 12 blir de religiöst ansvariga för sina handlingar." },
+    { title: "Tora-läsning", text: "Toran läses offentligt i synagogan varje vecka, vilket är en central del av judiskt religiöst liv." },
+    { title: "Jerusalem", text: "Jerusalem är en helig stad för judar, med Västra muren som en viktig plats för bön." },
+    { title: "Rosh Hashana", text: "Nyårsfirandet markerar början på det judiska året och är en tid för reflektion och förbön." },
+    { title: "Sukkot", text: "Lövhyddohögtiden firas genom att bo i tillfälliga hyddor för att minnas ökenvandringen." },
+    { title: "Simchat Tora", text: "Festen för Toran firar avslutandet och påbörjandet av läsningen av Torarullen." },
+    { title: "Kashrut", text: "Kashrut är de judiska matreglerna, som bland annat förbjuder att blanda kött och mjölk." },
+    { title: "Mikveh", text: "Rituellt bad används i olika reningsritualer, till exempel för konversion eller efter menstruation." },
+    { title: "Tefillin", text: "Små läderrullar med Tora-texter som fästs på arm och panna under morgonbönen." },
+    { title: "Mezuzah", text: "En pergamentrulle med Tora-texter som placeras vid dörrposter för att påminna om Guds bud." },
+    { title: "Menora", text: "En sjuarmad ljusstake som symboliserar Guds närvaro och används vid tempeltjänst." },
+    { title: "Shavuot", text: "Högtid som firar när Gud gav Toran till Mose på Sinai berg." },
 ];
+
 
 let index = 0;
 let autoscrollActive = true;
